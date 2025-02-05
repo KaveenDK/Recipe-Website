@@ -3,7 +3,76 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Contact Us</title>
+    <meta
+      name="description"
+      content="Contact Simply Recipes by KaveeN for inquiries and support."
+    />
+    <title>Contact Us - Simply Recipes</title>
+    <link rel="icon" href="/assets/images/KaveeN.jpg" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
   </head>
-  <body></body>
+  <body>
+    <header>
+      <h1><span style="color: brown">Simply Recipes</span></h1>
+      <nav>
+        <a href="/index.html"><i class="fa-solid fa-house"></i> Home</a>
+      </nav>
+    </header>
+
+    <main>
+      <h2>Contact Us</h2>
+      <p>
+        We'd love to hear from you! Whether you have a question, feedback, or
+        just want to say hello, feel free to reach out to us.
+      </p>
+
+      <section>
+        <h3>Get in Touch</h3>
+        <p>
+          <strong>Email:</strong>
+          <a href="mailto:support@kaveen.com">support@kaveen.com</a>
+        </p>
+        <p><strong>Phone:</strong> +94 123 456 789</p>
+        <p><strong>Address:</strong> 123 Recipe Lane, Colombo, Sri Lanka</p>
+      </section>
+
+      <section>
+        <h3>Send Us a Message</h3>
+        <form action="/submit-form" method="post">
+          <label for="name">Name:</label><br />
+          <input type="text" id="name" name="name" required /><br /><br />
+
+          <label for="email">Email:</label><br />
+          <input type="email" id="email" name="email" required /><br /><br />
+
+          <label for="message">Message:</label><br />
+          <textarea
+            id="message"
+            name="message"
+            rows="5"
+            cols="50"
+            required
+          ></textarea
+          ><br /><br />
+
+          <button type="submit">Send Message</button>
+        </form>
+      </section>
+    </main>
+
+    <footer>
+      <p>&copy; 2050 Simply Recipes by KaveeN. All rights reserved.</p>
+      <nav>
+        <a href="/pages/privacypolicy.html">Privacy Policy</a> |
+        <a href="/pages/termsofservice.html">Terms of Service</a> |
+        <a href="/pages/contactus.html">Contact Us</a>
+      </nav>
+    </footer>
+  </body>
 </html>
