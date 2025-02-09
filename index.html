@@ -9,27 +9,46 @@
     />
     <meta
       name="keywords"
-      content="Sri Lankan Recipes, Curry, Hoppers, Kottu, Cooking, Food, Simply Recipes, HTML, CSS, html, JavaScript, JS, KaveeN, Recipe, Srilanka, web developer, Dimantha, Kaveen, Dimantha Kaveen, KaveeN.com, kaveen.com"
+      content="Sri Lankan Recipes, Curry, Hoppers, Kottu, Cooking, Food, Simply Recipes, HTML, CSS, JavaScript, KaveeN, Recipe, Srilanka, web developer, Dimantha, Kaveen, Dimantha Kaveen, KaveeN.com, kaveen.com"
     />
+    <meta name="author" content="KaveeN" />
+    <meta
+      property="og:title"
+      content="Recipes By KaveeN - Authentic Sri Lankan Recipes"
+    />
+    <meta
+      property="og:description"
+      content="Explore authentic Sri Lankan recipes with Simply Recipes by KaveeN."
+    />
+    <meta property="og:image" content="/assets/images/web icon.jpg" />
+    <meta property="og:url" content="https://www.kaveen.lk" />
     <title>Recipes By KaveeN</title>
-    <link rel="icon" href="/assets/images/web icon.jpg" />
+    <link rel="icon" type="image/jpg" href="/assets/images/web icon.jpg" />
+    <link rel="stylesheet" href="/assets/css/homepage.css" />
   </head>
   <body>
     <header>
-      <h1><span style="color: brown">Simply Recipes</span></h1>
-      <input type="text" placeholder="Search for recipes" />
-      <button>Search</button>
+      <h1><span class="brand-color">Simply Recipes</span></h1>
+      <form action="/search" method="GET" class="search-form">
+        <input
+          type="text"
+          name="q"
+          placeholder="Search for recipes"
+          aria-label="Search for recipes"
+        />
+        <button type="submit">Search</button>
+      </form>
     </header>
 
     <main>
       <h2>Sri Lankan Recipes</h2>
-      <section>
-        <article>
+      <section class="recipe-grid">
+        <article class="recipe-card">
           <a href="/pages/recipes/recipe1.html"
             ><img
               src="/assets/images/Chicken Curry.jpg"
               alt="Sri Lankan Chicken Curry"
-              style="width: 300px; height: 300px; object-fit: cover"
+              class="recipe-image"
               title="Chicken Curry"
           /></a>
           <p><strong>Sri Lankan</strong></p>
@@ -41,12 +60,12 @@
         <br />
 
         <br />
-        <article>
+        <article class="recipe-card">
           <a href="/pages/recipes/recipe2.html"
             ><img
               src="/assets/images/Hoppers.jpg"
               alt="Sri Lankan Hoppers"
-              style="width: 300px; height: 300px; object-fit: cover"
+              class="recipe-image"
               title="Hoppers"
           /></a>
           <p><strong>Sri Lankan</strong></p>
@@ -58,12 +77,12 @@
         <br />
 
         <br />
-        <article>
+        <article class="recipe-card">
           <a href="/pages/recipes/recipe3.html"
             ><img
               src="/assets/images/Kottu.jpg"
               alt="Sri Lankan Kottu"
-              style="width: 300px; height: 300px; object-fit: cover"
+              class="recipe-image"
               title="Kottu"
           /></a>
           <p><strong>Sri Lankan</strong></p>
@@ -75,12 +94,12 @@
         <br />
 
         <br />
-        <article>
+        <article class="recipe-card">
           <a href="/pages/recipes/recipe4.html"
             ><img
               src="/assets/images/Dhal Curry.jpg"
               alt="Sri Lankan Dhal Curry"
-              style="width: 300px; height: 300px; object-fit: cover"
+              class="recipe-image"
               title="Dhal Curry"
           /></a>
           <p><strong>Sri Lankan</strong></p>
@@ -92,12 +111,12 @@
         <br />
 
         <br />
-        <article>
+        <article class="recipe-card">
           <a href="/pages/recipes/recipe5.html"
             ><img
               src="/assets/images/Coconut Sambol.jpg"
               alt="Sri Lankan Coconut Sambol"
-              style="width: 300px; height: 300px; object-fit: cover"
+              class="recipe-image"
               title="Coconut Sambol"
           /></a>
           <p><strong>Sri Lankan</strong></p>
@@ -109,12 +128,12 @@
         <br />
 
         <br />
-        <article>
+        <article class="recipe-card">
           <a href="/pages/recipes/recipe6.html"
             ><img
               src="/assets/images/Lamprais.jpg"
               alt="Sri Lankan Lamprais"
-              style="width: 300px; height: 300px; object-fit: cover"
+              class="recipe-image"
               title="Lamprais"
           /></a>
           <p><strong>Sri Lankan</strong></p>
@@ -126,12 +145,12 @@
         <br />
 
         <br />
-        <article>
+        <article class="recipe-card">
           <a href="/pages/recipes/recipe7.html"
             ><img
               src="/assets/images/Eggplant Pickle.jpg"
               alt="Sri Lankan Eggplant Pickle"
-              style="width: 300px; height: 300px; object-fit: cover"
+              class="recipe-image"
               title="Eggplant Pickle"
           /></a>
           <p><strong>Sri Lankan</strong></p>
@@ -143,12 +162,12 @@
         <br />
 
         <br />
-        <article>
+        <article class="recipe-card">
           <a href="/pages/recipes/recipe8.html"
             ><img
               src="/assets/images/Sour Fish Curry.jpg"
               alt="Sri Lankan Sour Fish Curry"
-              style="width: 300px; height: 300px; object-fit: cover"
+              class="recipe-image"
               title="Sour Fish Curry"
           /></a>
           <p><strong>Sri Lankan</strong></p>
@@ -160,12 +179,12 @@
         <br />
 
         <br />
-        <article>
+        <article class="recipe-card">
           <a href="/pages/recipes/recipe9.html"
             ><img
               src="/assets/images/Milk Rice.jpg"
               alt="Sri Lankan Milk Rice"
-              style="width: 300px; height: 300px; object-fit: cover"
+              class="recipe-image"
               title="Milk Rice"
           /></a>
           <p><strong>Sri Lankan</strong></p>
@@ -177,12 +196,12 @@
         <br />
 
         <br />
-        <article>
+        <article class="recipe-card">
           <a href="/pages/recipes/recipe10.html"
             ><img
               src="/assets/images/Wood Apple Juice.jpg"
               alt="Sri Lankan Wood Apple Juice"
-              style="width: 300px; height: 300px; object-fit: cover"
+              class="recipe-image"
               title="Wood Apple Juice"
           /></a>
           <p><strong>Sri Lankan</strong></p>
@@ -195,12 +214,12 @@
       <br />
 
       <br />
-      <article>
+      <article class="recipe-card">
         <a href="/pages/recipes/recipe11.html"
           ><img
             src="/assets/images/StringHoppers.jpg"
             alt="Sri Lankan String Hoppers"
-            style="width: 300px; height: 300px; object-fit: cover"
+            class="recipe-image"
             title="String Hoppers"
         /></a>
         <p><strong>Sri Lankan</strong></p>
@@ -212,12 +231,12 @@
       <br />
 
       <br />
-      <article>
+      <article class="recipe-card">
         <a href="/pages/recipes/recipe12.html"
           ><img
             src="/assets/images/Pittu.jpg"
             alt="Sri Lankan Pittu"
-            style="width: 300px; height: 300px; object-fit: cover"
+            class="recipe-image"
             title="Pittu"
         /></a>
         <p><strong>Sri Lankan</strong></p>
@@ -229,12 +248,12 @@
       <br />
 
       <br />
-      <article>
+      <article class="recipe-card">
         <a href="/pages/recipes/recipe13.html"
           ><img
             src="/assets/images/LunuMiris.jpg"
             alt="Sri Lankan Spicy Onion Sambol"
-            style="width: 300px; height: 300px; object-fit: cover"
+            class="recipe-image"
             title="Spicy Onion Sambol"
         /></a>
         <p><strong>Sri Lankan</strong></p>
@@ -246,12 +265,12 @@
       <br />
 
       <br />
-      <article>
+      <article class="recipe-card">
         <a href="/pages/recipes/recipe14.html"
           ><img
             src="/assets/images/Jackfruit Curry.jpg"
             alt="Sri Lankan Jackfruit Curry"
-            style="width: 300px; height: 300px; object-fit: cover"
+            class="recipe-image"
             title="Jackfruit Curry"
         /></a>
         <p><strong>Sri Lankan</strong></p>
@@ -263,12 +282,12 @@
       <br />
 
       <br />
-      <article>
+      <article class="recipe-card">
         <a href="/pages/recipes/recipe15.html"
           ><img
             src="/assets/images/CoconutRoti.jpg"
             alt="Sri Lankan Coconut Roti"
-            style="width: 300px; height: 300px; object-fit: cover"
+            class="recipe-image"
             title="Coconut Roti"
         /></a>
         <p><strong>Sri Lankan</strong></p>
@@ -280,12 +299,12 @@
       <br />
 
       <br />
-      <article>
+      <article class="recipe-card">
         <a href="/pages/recipes/recipe16.html"
           ><img
             src="/assets/images/CashewCurry.jpg"
             alt="Sri Lankan Cashew Curry"
-            style="width: 300px; height: 300px; object-fit: cover"
+            class="recipe-image"
             title="Cashew Curry"
         /></a>
         <p><strong>Sri Lankan</strong></p>
@@ -297,12 +316,12 @@
       <br />
 
       <br />
-      <article>
+      <article class="recipe-card">
         <a href="/pages/recipes/recipe17.html"
           ><img
             src="/assets/images/Achcharu.jpg"
             alt="Sri Lankan Pickle"
-            style="width: 300px; height: 300px; object-fit: cover"
+            class="recipe-image"
             title="Pickle (Achcharu)"
         /></a>
         <p><strong>Sri Lankan</strong></p>
@@ -314,12 +333,12 @@
       <br />
 
       <br />
-      <article>
+      <article class="recipe-card">
         <a href="/pages/recipes/recipe18.html"
           ><img
             src="/assets/images/Bibikkan.jpg"
             alt="Sri Lankan Coconut Cake"
-            style="width: 300px; height: 300px; object-fit: cover"
+            class="recipe-image"
             title="Coconut Cake (Bibikkan)"
         /></a>
         <p><strong>Sri Lankan</strong></p>
@@ -331,12 +350,12 @@
       <br />
 
       <br />
-      <article>
+      <article class="recipe-card">
         <a href="/pages/recipes/recipe19.html"
           ><img
             src="/assets/images/MungBeanCurry.jpg"
             alt="Sri Lankan Mung Bean Curry"
-            style="width: 300px; height: 300px; object-fit: cover"
+            class="recipe-image"
             title="Mung Bean Curry"
         /></a>
         <p><strong>Sri Lankan</strong></p>
@@ -348,12 +367,12 @@
       <br />
 
       <br />
-      <article>
+      <article class="recipe-card">
         <a href="/pages/recipes/recipe20.html"
           ><img
             src="/assets/images/CrabCurry.jpg"
             alt="Sri Lankan Crab Curry"
-            style="width: 300px; height: 300px; object-fit: cover"
+            class="recipe-image"
             title="Crab Curry"
         /></a>
         <p><strong>Sri Lankan</strong></p>
