@@ -1,126 +1,196 @@
 /* General Styles */
 body {
-    font-family: 'Arial', sans-serif;
-    line-height: 1.6;
-    margin: 0;
-    padding: 0;
-    color: #333;
-    background-color: #f9f9f9;
-  }
-  
-  a {
-    text-decoration: none;
-    color: brown;
-  }
-  
-  a:hover {
-    text-decoration: underline;
-  }
-  
-  /* Header */
-  header {
-    background-color: #fff;
-    padding: 20px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    text-align: center;
-  }
-  
+  font-family: 'Arial', sans-serif;
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+  color: #333;
+  background-color: #f9f9f9;
+}
+
+a {
+  text-decoration: none;
+  color: brown;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* Header */
+header {
+  background-color: #fff;
+  padding: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 2.5rem;
+  color: brown;
+}
+
+header nav {
+  margin-top: 10px;
+}
+
+header nav a {
+  color: brown;
+  font-size: 1rem;
+}
+
+header nav a:hover {
+  text-decoration: underline;
+}
+
+/* Main Content */
+main {
+  padding: 20px;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+h2 {
+  font-size: 2rem;
+  color: brown;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+p {
+  font-size: 1rem;
+  color: #555;
+  line-height: 1.8;
+}
+
+section {
+  margin-bottom: 30px;
+}
+
+h3 {
+  font-size: 1.5rem;
+  color: brown;
+  margin-bottom: 10px;
+}
+
+ul {
+  list-style-type: disc;
+  padding-left: 20px;
+}
+
+ul li {
+  margin-bottom: 10px;
+}
+
+/* Footer */
+footer {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 20px;
+  margin-top: 40px;
+}
+
+footer nav {
+  margin-top: 10px;
+}
+
+footer nav a {
+  color: white;
+  margin: 0 10px;
+  font-size: 0.9rem;
+}
+
+footer nav a:hover {
+  color: brown;
+}
+
+/* Responsive Design */
+@media (max-width: 1440px) {
   header h1 {
-    margin: 0;
-    font-size: 2.5rem;
-    color: brown;
+      font-size: 2.25rem;
   }
-  
-  header nav {
-    margin-top: 10px;
-  }
-  
-  header nav a {
-    color: brown;
-    font-size: 1rem;
-  }
-  
-  header nav a:hover {
-    text-decoration: underline;
-  }
-  
-  /* Main Content */
+
   main {
-    padding: 20px;
-    max-width: 800px;
-    margin: 0 auto;
+      max-width: 1000px;
   }
-  
-  h2 {
-    font-size: 2rem;
-    color: brown;
-    text-align: center;
-    margin-bottom: 20px;
-  }
-  
-  p {
-    font-size: 1rem;
-    color: #555;
-    line-height: 1.8;
-  }
-  
-  section {
-    margin-bottom: 30px;
-  }
-  
-  h3 {
-    font-size: 1.5rem;
-    color: brown;
-    margin-bottom: 10px;
-  }
-  
-  ul {
-    list-style-type: disc;
-    padding-left: 20px;
-  }
-  
-  ul li {
-    margin-bottom: 10px;
-  }
-  
-  /* Footer */
-  footer {
-    background-color: #333;
-    color: white;
-    text-align: center;
-    padding: 20px;
-    margin-top: 40px;
-  }
-  
-  footer nav {
-    margin-top: 10px;
-  }
-  
-  footer nav a {
-    color: white;
-    margin: 0 10px;
-    font-size: 0.9rem;
-  }
-  
-  footer nav a:hover {
-    color: brown;
-  }
-  
-  /* Responsive Design */
-  @media (max-width: 768px) {
-    header h1 {
+}
+
+@media (max-width: 1024px) {
+  header h1 {
       font-size: 2rem;
-    }
-  
-    main {
-      padding: 15px;
-    }
-  
-    h2 {
-      font-size: 1.75rem;
-    }
-  
-    h3 {
-      font-size: 1.25rem;
-    }
   }
+
+  main {
+      max-width: 900px;
+  }
+
+  h2 {
+      font-size: 1.75rem;
+  }
+
+  h3 {
+      font-size: 1.25rem;
+  }
+}
+
+@media (max-width: 768px) {
+  header h1 {
+      font-size: 1.75rem;
+  }
+
+  main {
+      padding: 15px;
+  }
+
+  h2 {
+      font-size: 1.5rem;
+  }
+
+  h3 {
+      font-size: 1.25rem;
+  }
+}
+
+@media (max-width: 425px) {
+  header h1 {
+      font-size: 1.5rem;
+  }
+
+  h2 {
+      font-size: 1.25rem;
+  }
+
+  h3 {
+      font-size: 1rem;
+  }
+}
+
+@media (max-width: 375px) {
+  header h1 {
+      font-size: 1.25rem;
+  }
+
+  h2 {
+      font-size: 1.1rem;
+  }
+
+  h3 {
+      font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 320px) {
+  header h1 {
+      font-size: 1rem;
+  }
+
+  h2 {
+      font-size: 1rem;
+  }
+
+  h3 {
+      font-size: 0.8rem;
+  }
+}
